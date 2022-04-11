@@ -1,5 +1,8 @@
 /* /////////////////////////
 //////GENERAL */
+html{
+    font-size: 62.5%;
+}
 
 body{
     background-color: #ececec;
@@ -7,29 +10,39 @@ body{
     width: 100vw;
 }
 
+.title{
+    color: #3a75c4;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.title span{
+    color: #fad600;
+}
+
+
 h4{
     font-family: 'Roboto Mono', monospace;
-    font-size: 1.7rem;
+    font-size: 2.5rem;
 }
 
 
 .workSpace{
     height: 85%;
     width: 85%;
-    margin: 3rem auto;
+    margin: 5rem auto;
     border-radius: 3rem;
     background-color: #ececec;
     box-shadow: 1rem 1rem 1.5rem #c7c4c4,
                 -1rem -1rem 1.5rem #f9f9f9;
 }
 
-.title{
-    color: #3a75c4;
+.workSpace section{
     text-align: center;
 }
 
-.title span{
-    color: #fad600;
+.workSpace section button{
+    font-size: 2.1rem;
 }
 
 .ukraine{
@@ -38,9 +51,11 @@ h4{
 }
 
 
-
 /* /////////////////////////
 //////FACEBOOK STYLE*/
+
+
+/* ********DARK****** */
 
 .facebook-style-btn{
     border-radius: 2px;
@@ -65,19 +80,88 @@ h4{
     border-color: #1d4698;
 }
 
+/* *********LIGHT******** */
+
 .facebook-style-light{
     background: #f6f7f9;
     border: solid 1px #ced0d4;
     color: #4b4f56;
+    margin-left: 2rem;
 }
 
 .facebook-style-light:hover{
-    background-color: #e9ebee;
+    background: #d6dadf;
 }
 
 .facebook-style-light:active{
-    background-color: #d8dade;
-    border-color: #d8dade;
+    background-color: #c3c8d0;
+    border-color: #c3c8d0;
+}
+
+/* /////////////////////////
+//////3D BUTTONS */
+
+
+/* *******BOX******* */
+.btn-3d-1{
+    position: relative;
+    background: orangered;
+    color: #E5EAF5;
+    padding: 1.5rem 2.4rem;
+    font-size: 1.4rem;
+    box-shadow: -6px 6px 0 hsl(16, 100%, 30%);
+    outline: none;
+}
+
+.btn-3d-1:hover{
+    background: hsl(16, 100%, 45%);
+}
+
+.btn-3d-1:active{
+    background: hsl(16, 100%, 40%);
+    top: 3px;
+    left: -3px;
+    box-shadow: hsl(16, 100%, 30%);
+}
+
+.btn-3d-1::before{
+    position: absolute;
+    display: block;
+    content: "";
+    height: 0;
+    width: 0;
+
+    border: solid 6px transparent;
+    border-right: solid 6px hsl(16, 100%, 30%);
+    border-left-width: 0;
+    background: none;
+    top: -2px;
+    left: -8px;
+}
+
+.btn-3d-1::after{
+    position: absolute;
+    display: block;
+    content: "";
+    height: 0;
+    width: 0;
+
+    border: solid 6px transparent;
+    border-top: solid 6px hsl(16, 100%, 30%);
+    border-bottom-width: 0;
+    right: -2px;
+    bottom: -8px;
 }
 
 
+/* *********CIRCLE********* */
+
+.btn-3d-2{
+    margin-left: 2rem;
+}
+
+.btn-3d-2{
+    position: relative;
+    background: #ecd300;
+    background: -webkit-radial-gradient(red, blue);
+}
