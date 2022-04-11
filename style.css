@@ -1,7 +1,9 @@
 /* /////////////////////////
+/* /////////////////////////
 //////GENERAL */
 html{
     font-size: 62.5%;
+    box-sizing: border-box;
 }
 
 body{
@@ -101,8 +103,6 @@ h4{
 /* /////////////////////////
 //////3D BUTTONS */
 
-
-/* *******BOX******* */
 .btn-3d-1{
     position: relative;
     background: orangered;
@@ -154,14 +154,34 @@ h4{
 }
 
 
-/* *********CIRCLE********* */
+/* /////////////////////////
+//////GRADIENT BORDERED BUTTONS */
 
-.btn-3d-2{
-    margin-left: 2rem;
+/* ********** FIRST GRADIENT ********** */
+
+.gradient-1{
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding: 2rem 4rem;
+    background-color: #e7eef1;
+    border: solid 10px transparent;
+    border-image: linear-gradient(to top right, #FFB5E8,#AFF8DB);
+    border-image-slice: 1;
+    color: #FFB5E8;
+    transition: all 0.5s ease-in-out;
+    text-shadow: 1px 1px 2px #AA3939;
 }
 
-.btn-3d-2{
-    position: relative;
-    background: #ecd300;
-    background: -webkit-radial-gradient(red, blue);
+
+.gradient-1:hover{
+    background-image: linear-gradient(to top right, #FFB5E8, #AFF8DB);
+    color: #AA3939;
+    text-shadow: 1px 1px 2px #FFB5E8;
+}
+
+/* ********** SECOND GRADIENT ********** */
+
+.gradient-2{
+    margin-left: 2rem;
 }
