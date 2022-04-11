@@ -12,6 +12,10 @@ body{
     width: 100vw;
 }
 
+section{
+    margin-top: 7rem;
+}
+
 .title{
     color: #3a75c4;
     text-align: center;
@@ -26,6 +30,7 @@ body{
 h4{
     font-family: 'Roboto Mono', monospace;
     font-size: 2.5rem;
+    text-decoration: underline;
 }
 
 
@@ -202,5 +207,43 @@ h4{
     color: #011efe;
     text-shadow: 1px 1px 2px #fe00f6;
     border: none;
+}
+
+
+/* /////////////////////////
+//////ANIMATED BUTTONS*/
+
+
+/* ********ANIMATED ONE****** */
+.animated-1{
+    position: relative;
+    display: inline-block;
+    padding: 2rem 4rem;
+    font-size: 1.4rem;
+    background-color: #00b3b4;
+    background-image: url(pattern.png);
+    background-size: 4rem 4rem;
+    border: 1px solid #555;
+    color: #ececec;
+    transition: all ease .3s;
+}
+
+.animated-1:hover{
+    animation: loading-button-animation 2s linear infinite;
+}
+
+@keyframes loading-button-animation {
+    from{
+        background-position: 0 0;
+    }
+    to{
+        background-position: 4rem 0;
+    }
+}
+
+/* ********ANIMATED TWO****** */
+
+.animated-2{
+    margin-left: 2rem;
 }
 
