@@ -165,7 +165,7 @@ h4{
     display: inline-block;
     padding: 2rem 4rem;
     background-color: #e7eef1;
-    border: solid 10px transparent;
+    border: solid 1rem transparent;
     border-image: linear-gradient(to top right, #FFB5E8,#AFF8DB);
     border-image-slice: 1;
     color: #FFB5E8;
@@ -184,4 +184,23 @@ h4{
 
 .gradient-2{
     margin-left: 2rem;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding: 2rem 4rem;
+    background-color: #e7eef1;
+    border: solid 4px transparent;
+    border-image: linear-gradient(to right, #fe00f6,#fb0072);
+    border-image-slice: 1;
+    color: #fe00f6;
+    transition: all 0.5s ease-in-out;
+    text-shadow: 1px 1px 1px #011efe;
 }
+
+.gradient-2:hover{
+    background-image: linear-gradient(to  right, #fe00f6, transparent);
+    color: #011efe;
+    text-shadow: 1px 1px 2px #fe00f6;
+    border: none;
+}
+
