@@ -59,52 +59,6 @@ h4{
 }
 
 
-/* /////////////////////////
-//////FACEBOOK STYLE*/
-
-
-/* ********DARK****** */
-
-.facebook-style-btn{
-    border-radius: 2px;
-    font-size: 0.9rem;
-    padding: 6px 12px;
-}
-
-.facebook-style-dark{
-    box-shadow: inset 0 1px 00 #4d73bf;
-    border: solid 1px #4267b2;
-    color: white;
-    background: #4267b2;
-    text-shadow: 0 1px 0 #3359a5;
-}
-
-.facebook-style-dark:hover{
-    background: #2b54a7;
-}
-
-.facebook-style-dark:active{
-    background: #1d4698;
-    border-color: #1d4698;
-}
-
-/* *********LIGHT******** */
-
-.facebook-style-light{
-    background: #f6f7f9;
-    border: solid 1px #ced0d4;
-    color: #4b4f56;
-    margin-left: 2rem;
-}
-
-.facebook-style-light:hover{
-    background: #d6dadf;
-}
-
-.facebook-style-light:active{
-    background-color: #c3c8d0;
-    border-color: #c3c8d0;
-}
 
 /* /////////////////////////
 //////3D BUTTONS */
@@ -277,9 +231,7 @@ h4{
 
 
 /* /////////////////////////
-//////TOGGLE BUTTONS*/
-
-/* ********TOGGLE TWO****** */
+//////TOGGLE BUTTON*/
 
 .toggle-1{
     display: inline-block;
