@@ -8,8 +8,8 @@ html{
 
 body{
     background-color: #ececec;
-    height: 100vh;
     width: 100vw;
+    
 }
 
 section{
@@ -35,13 +35,14 @@ h4{
 
 
 .workSpace{
-    height: 85%;
+    height: 100%;
     width: 85%;
     margin: 5rem auto;
     border-radius: 3rem;
     background-color: #ececec;
     box-shadow: 1rem 1rem 1.5rem #c7c4c4,
                 -1rem -1rem 1.5rem #f9f9f9;
+    padding-bottom: 9rem;
 }
 
 .workSpace section{
@@ -274,3 +275,58 @@ h4{
     opacity: 1;
 }
 
+
+/* /////////////////////////
+//////TOGGLE BUTTONS*/
+
+/* ********TOGGLE TWO****** */
+
+.toggle-1{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px 0 0;
+}
+
+.toggle-1__input{
+    display: none;
+}
+
+.toggle-1__button{
+    position: relative;
+    display: inline-block;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    text-transform: uppercase;
+    background-color: #cc0000;
+    border: 1px solid #cc0000;
+    color: #ececec;
+    width: 8rem;
+    height: 3rem;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.toggle-1__button::before{
+    position: absolute;
+    top: 6px;
+    left: 4.3rem;
+    content: "off";
+    display: inline-block;
+    height: 2rem;
+    padding: 0 3px;
+    background: #ececec;
+    color: #cc0000;
+    transition: all .3s ease;
+}
+
+.toggle-1__input:checked + .toggle-1__button{
+    background: #00b3b4;
+    border: 1px solid #00b3b4;
+}
+
+.toggle-1__input:checked + .toggle-1__button::before{
+    left: 5px;
+    content: "on";
+    color: #00b3b4;
+
+}
