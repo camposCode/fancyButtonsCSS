@@ -9,7 +9,12 @@ html{
 body{
     background-color: #ececec;
     width: 100vw;
-    
+}
+
+h4{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2.5rem;
+    text-decoration: underline;
 }
 
 section{
@@ -25,14 +30,6 @@ section{
 .title span{
     color: #fad600;
 }
-
-
-h4{
-    font-family: 'Roboto Mono', monospace;
-    font-size: 2.5rem;
-    text-decoration: underline;
-}
-
 
 .workSpace{
     height: 100%;
@@ -280,5 +277,8 @@ h4{
     left: 5px;
     content: "on";
     color: #00b3b4;
-
 }
+
+/* /////////////////////////
+//////ROTATIVE EFFECT BUTTONS*/
+
